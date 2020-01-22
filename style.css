@@ -17,10 +17,18 @@ i{
     font-size: 30px;
 }
 
-.section__game{
+iframe{
+    width:80vw;
+    max-width: 600px;
+    min-width: 310px;
+}
 
+.section__game{
     display: flex;
     flex-direction: column;
+
+    padding: 10px 5px;
+    margin: 10px 5px;
 }
 
 .section__results{
@@ -29,7 +37,17 @@ i{
     justify-content: center;
     align-items: center;
 
-    margin: 0 150px;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+.section__movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 5px;
+    margin: 50px 0;
 }
 
 .game__title{
@@ -65,13 +83,16 @@ i{
 .player__name{
     display: flex;
     align-items: center;
+
+    padding: 50px 0;
 }
 
 .player__choices{
-    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    padding: 50px 0;
 
 }
 
@@ -89,12 +110,10 @@ i{
 
 .choices__item--button:hover{
     cursor: pointer;
-    background-color: silver;
+    background-color: crimson;
 }
 
 .player__item{
-    flex: 3;
-
     display: flex;
     align-items: center;
 
@@ -106,15 +125,6 @@ i{
 
 .results__stats{
     text-align: center;
-    flex: 2;
-}
-
-.results__movie{
-    flex: 1;
-    height: 70%;
-    
-    display: flex;
-    align-items: center;
 }
 
 .modal{
@@ -134,3 +144,17 @@ i{
     font-size: 2em;
 }
 
+button{
+    position: fixed;
+    bottom: 10vh;
+    font-size: 3.5rem;
+
+
+    background-color: rgba(150,150,150,0.95);
+    border: 2px solid black;
+    
+}
+
+button:hover{
+    background-color: crimson;
+}

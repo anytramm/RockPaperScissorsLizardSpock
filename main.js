@@ -65,13 +65,13 @@ const handBattle = e => {
                         gamesStats.countCompWin++;
                         
                         modalTitle.textContent = `${gameResult.compHand.toString()} ${actions[i][j].toString()} ${gameResult.userHand.toString()}`;
-                        compHandDivElement.style.color = "red";
+                        compHandDivElement.style.color = "crimson";
                     }
                     else if(result[i][j] === 1){
                         gamesStats.countUserWin++;
 
                         modalTitle.textContent = `${gameResult.userHand.toString()} ${actions[i][j].toString()} ${gameResult.compHand.toString()}`;
-                        userHandDivElement.style.color = "red";
+                        userHandDivElement.style.color = "crimson";
                     }
                     else{
                         gamesStats.countDraw++;
