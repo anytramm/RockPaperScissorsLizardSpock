@@ -24,7 +24,7 @@
         <div class="game">
             <div class="game__player">
                 <div class="player__name">
-                    <h2>You:</h2>
+                    <h2>Select a hand:</h2>
                 </div>
                 <div class="player__choices">
                     <div data-option="rock" class="choices__item choices__item--button" title="rock">
@@ -43,35 +43,6 @@
                         <i class="far fa-hand-spock"></i>
                     </div>
                 </div>
-                <div class="player__item">
-                    <i class="far fa-hand-spock"></i>
-                </div>
-            </div>
-
-            <div class="game__player">
-                <div class="player__name">
-                    <h2>Computer:</h2>
-                </div>
-                <div class="player__choices">
-                    <div class="choices__item">
-                        <i class="far fa-hand-rock"></i>
-                    </div>
-                    <div class="choices__item">
-                        <i class="far fa-hand-paper"></i>
-                    </div>
-                    <div class="choices__item">
-                        <i class="far fa-hand-scissors"></i>
-                    </div>
-                    <div class="choices__item">
-                        <i class="far fa-hand-lizard"></i>
-                    </div>
-                    <div class="choices__item">
-                        <i class="far fa-hand-spock"></i>
-                    </div>
-                </div>
-                <div class="player__item">
-                    <i class="far fa-hand-spock"></i>
-                </div>
             </div>
 
         </div>
@@ -84,16 +55,19 @@
             <div id="results__fail">Computer: 0</div>
             <div id="results__draw">Draw: 0</div>
         </div>
+    </section>
+    <section>
         <div class="results__movie">
-            <iframe height="90%" src="https://www.youtube-nocookie.com/embed/iSHPVCBsnLw?start=43"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            <iframe height="90%" src="https://www.youtube-nocookie.com/embed/iSHPVCBsnLw?start=43" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </section>
 
     <!-- MODAL -->
     <div class="modal">
-        <h4></h4>
+        <h4 class="modal__title"></h4>
+        <div class="modal__result"></div>
     </div>
 
 

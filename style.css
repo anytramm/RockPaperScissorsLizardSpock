@@ -1,36 +1,32 @@
 *{
+    font-family: 'Amatic SC', cursive, 'Shadows Into Light', cursive;
     margin: 0;
 }
 
 body{
-    font-family: 'Amatic SC', cursive, 'Shadows Into Light', cursive;
-    font-size: 190%;
+    font-size: 20px;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.75rem;
+    letter-spacing: 0.5rem;
 }
-
 
 i{
     font-size: 30px;
 }
 
 .section__game{
-    height: 65vh;
 
     display: flex;
     flex-direction: column;
 }
 
 .section__results{
-    height: 35vh;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     margin: 0 150px;
@@ -41,7 +37,7 @@ i{
     align-items: center;
     justify-content: center;
 
-    flex: 3;
+    margin: 20px 10px;
 }
 
 .game{
@@ -49,7 +45,8 @@ i{
     flex-direction: row;
     justify-content: space-around;
 
-    flex: 7;
+    margin: 50px 10px;
+
 }
 
 .game__player{
@@ -57,20 +54,21 @@ i{
     flex-direction: column;
     align-items: center;
 
-    width:30vw;
+    width:80vw;
+    max-width: 600px;
+    min-width: 310px;
 
     border: 5px solid black;
 }
 
 
 .player__name{
-    flex: 1;
     display: flex;
     align-items: center;
 }
 
 .player__choices{
-    flex: 1;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -130,8 +128,9 @@ i{
     background-color: rgba(90,90,90,0.95);
     color: white;
 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-size: 2em;
 }
+
